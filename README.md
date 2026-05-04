@@ -1,19 +1,43 @@
+Aqui está um `README` curto, claro e direto ao ponto para o seu projeto.
+
+---
+
 # Validador de CPF em Python
 
-Este projeto contém um script simples, eficiente utilizando uma biblioteca externas para validar números de Cadastro de Pessoas Físicas (CPF) no Brasil. Ele utiliza o algoritmo oficial de validação baseado nos dígitos verificadores.
+Este é um script simples em Python que utiliza a biblioteca `validate-docbr` para validar números de CPF.
 
-# Funcionalidades
+---
 
-Validação de formato: Verifica se a entrada possui 11 dígitos e é composta apenas por números.
+## Como utilizar
 
-Filtro de CPFs inválidos: Identifica sequências numéricas inválidas (como 111.111.111-11, mesmo que passem no cálculo dos dígitos).
+### 1. Pré-requisitos
+Certifique-se de ter o Python instalado em sua máquina.
 
-Cálculo dos dígitos verificadores: Executa o algoritmo matemático da Receita Federal para garantir que os dois últimos dígitos estão corretos.
+### 2. Instalação
+Abra o seu terminal ou prompt de comando e instale a biblioteca necessária:
 
-# Como funciona a validação?
+```bash
+pip install validate-docbr
+```
 
-O algoritmo de validação do CPF funciona em duas etapas principais para calcular os dígitos verificadores (os dois últimos números do CPF):
+### 3. Execução
+Execute o script e digite o número do CPF quando solicitado:
 
-Primeiro Dígito Verificador: Multiplica-se os 9 primeiros dígitos por uma sequência decrescente de 10 a 2, soma-se os resultados e aplica-se o módulo 11.
+```bash
+python nome_do_arquivo.py
+```
 
-Segundo Dígito Verificador: Inclui-se o primeiro dígito verificador calculado e multiplica-se os 10 dígitos por uma sequência de 11 a 2, aplicando o mesmo cálculo de módulo.
+---
+
+## Exemplo de uso
+
+```text
+Digite o CPF para validação: 12345678909
+CPF inválido!
+```
+
+---
+
+## Funcionalidade
+
+O código instancia o objeto `CPF` da biblioteca `validate_docbr` e utiliza o método `.validate()` para verificar se o documento inserido respeita o algoritmo de validação de CPF brasileiro.
