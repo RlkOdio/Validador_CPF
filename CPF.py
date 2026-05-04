@@ -1,5 +1,5 @@
 # Encontrei essa biblioteca chamada "validate-docbr" que pode ser usada para validar CPF. Você pode instalá-la usando pip:
-# pip install validate-docbr
+# Comando que utilizei para importar a biblioteca externa: "pip install validate-docbr"
 
 from validate_docbr import CPF
 
