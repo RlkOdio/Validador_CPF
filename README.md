@@ -1,7 +1,3 @@
-Aqui está um `README` curto, claro e direto ao ponto para o seu projeto.
-
----
-
 # Validador de CPF em Python
 
 Este é um script simples em Python que utiliza a biblioteca `validate-docbr` para validar números de CPF.
